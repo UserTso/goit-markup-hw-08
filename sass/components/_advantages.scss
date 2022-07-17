@@ -1,0 +1,71 @@
+/* about company */
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.benefits__list {
+    display: flex;
+
+}
+
+.benefit__item {
+
+    margin-right: 30px;
+}
+
+.benefit__item:last-child {
+    margin-right: 0px;
+}
+
+.benefit__blok {
+    display: flex;
+    background: #F5F4FA;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 120px;
+}
+
+.benefit__icon {
+    width: 65px;
+    height: 70px;
+}
+
+.benefit__subtitle {
+
+    color: var(--primary-text-color);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+}
+
+.benefit__text {
+
+
+    color: var(--secondary-text-color);
+    width: 270px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+}
