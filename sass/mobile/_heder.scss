@@ -1,7 +1,8 @@
-@media screen and (min-width: 1200px) {
+
 
 /* HEDER */
 
+@media screen and (max-width: 767px) {
 
 .site-heder {
     border-bottom: 1px solid #ECECEC;
@@ -9,19 +10,22 @@
 
 .main-heder,
 .nav-title {
-    display: flex;
+    display: block;
     align-items: center;
+
 }
 
 /* logo */
 
 .logo {
+    width: 134px;
+    height: 28px;
     margin-right: 93px;
 
     font-family: 'Raleway';
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
 
     text-decoration: none;
 }
@@ -38,7 +42,7 @@
 
 
 .nav {
-    display: flex;
+    display: none;
 }
 
 .nav__item:not(:last-child) {
@@ -91,7 +95,8 @@
 /* link-auth */
 
 .auth {
-    display: flex;
+    
+    display: none;
     margin-left: auto;
 }
 

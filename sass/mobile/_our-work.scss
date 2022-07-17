@@ -1,9 +1,10 @@
-@media screen and (min-width: 1200px) {
-
 /*            WORK            */
 
+@media screen and (max-width: 767px) {
+
 .work__section {
-    padding-bottom: 94px;
+    display: none;
+   
 }
 
 .work__title {
