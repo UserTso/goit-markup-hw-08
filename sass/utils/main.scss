@@ -1,11 +1,11 @@
 @import './variables'; 
-@import './container';
+
 
 
 
 /* / components / */
 
-@import '../components/reset'; 
+@import '../components/reset';
 @import '../components/heder';
 @import '../components/hero';
 @import '../components/backdrop';
@@ -16,9 +16,8 @@
 @import '../components/footer';
 @import '../components/portfolio';
 
-/*  /mobile/  */ 
 
-@import '../mobile/index-mobile';
+
 
 
 
