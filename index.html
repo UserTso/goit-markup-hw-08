@@ -18,7 +18,7 @@
   <body class="body">
     <!-- хедер -->
 
-    <header class="site-heder">
+    <!-- <header class="site-heder">
       <div class="container main-heder">
         <nav class="nav-title">
           <a href="./index.html" class="logo"
@@ -50,7 +50,7 @@
           </li>
         </ul>
       </div>
-    </header>
+    </header> -->
     <!-- Розділ мейн -->
     <main class="primary">
       <!-- Герой -->
@@ -155,7 +155,7 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/igor.jpg" alt="Product Designer" width="270" />
+              <img class="team__image" src="./images/igor.jpg" alt="Product Designer" width="270" />
               <div class="team__description">
                 <h3 class="team-subtitle">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -191,7 +191,12 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/olga.jpg" alt="Frontend Developer" width="270" />
+              <img
+                class="team__image"
+                src="./images/olga.jpg"
+                alt="Frontend Developer"
+                width="270"
+              />
               <div class="team__description">
                 <h3 class="team-subtitle">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -227,7 +232,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/nikolay.jpg" alt="Marketing" width="270" />
+              <img class="team__image" src="./images/nikolay.jpg" alt="Marketing" width="270" />
               <div class="team__description">
                 <h3 class="team-subtitle">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -263,7 +268,7 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/misha.jpg" alt="UI Designer" width="270" />
+              <img class="team__image" src="./images/misha.jpg" alt="UI Designer" width="270" />
               <div class="team__description">
                 <h3 class="team-subtitle">Михаил Ермаков</h3>
                 <p class="team__text">UI Designer</p>
@@ -301,6 +306,8 @@
           </ul>
         </div>
       </section>
+
+      <!--      ---------CLIENTS---------        -->
       <section class="section">
         <div class="container">
           <h2 class="clients__title">Постоянные клиекты</h2>
@@ -432,6 +439,8 @@
       </div>
     </footer>
 
+    <!--         BACKDROP          -->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal__btn" data-modal-close>
@@ -514,6 +523,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -4,15 +4,40 @@
     background-color: #2F303A;
     padding-top: 50px;
     padding-bottom: 60px;
+
+    @media screen and (max-width: 767px) {
+        min-width: 480px;
+    }
 }
 
 .footer {
     display: flex;
     align-items: baseline;
+
+    @media screen and (max-width: 767px) {
+        flex-direction: column;
+    }
+
+         @media screen and (min-width: 768px) and 
+         (max-width: 1199px) {
+
+
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: space-around;
+         }
+
 }
 
 .footer-auth {
     margin-right: 70px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 60px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+      
 }
 
 
@@ -20,6 +45,13 @@
     display: block;
     margin-right: auto;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) { 
+        
+        font-size: 24px;
+        line-height: 1.17;
+        text-align: center;}
+   
 }
 
 .logo__studio--white {
@@ -41,6 +73,10 @@
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
+
+    @media screen and (max-width: 1199px) {
+        text-align: center;
+    }
 }
 
 .link--maps {
@@ -62,6 +98,14 @@
 
 .footer__net {
     margin-right: 93px;
+
+    margin-right: 70px;
+    
+        @media screen and (max-width: 767px) {
+            margin-bottom: 60px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 }
 
 .footer__subtitle {
@@ -69,17 +113,17 @@
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 1199px) {
+    
+           text-align: center;
+        }
 }
 
-.footer-listnet {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 .footer__link {
     background: rgba(255, 255, 255, 0.1);
@@ -89,6 +133,34 @@
 
 .footer__icons {
     fill: #FFFFFF;
+}
+
+.footer__letter {
+    @media screen and (max-width: 767px) {
+           
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+                 @media screen and (min-width: 768px) and 
+                 (max-width: 1199px) {
+margin-top: 60px;
+                 }
+}
+
+.footer__form {
+    @media screen and (max-width: 767px) {
+       
+        display: flex;
+            flex-direction: column;
+
+    }
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+            display: flex;
+            flex-direction: column;
+
+        }
 }
 
 .footer__input {
@@ -104,6 +176,17 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
+
+    @media screen and (max-width: 767px) {
+        width: 450px;
+        margin-bottom: 20px;
+       
+    }
+
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 450px;
+            margin-bottom: 20px;
+        }
 }
 
 .button--footer {
@@ -115,7 +198,18 @@
 
     border: transparent;
 
-}
+    @media screen and (max-width: 767px) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+         @media screen and (min-width: 768px) and (max-width: 1199px) {
+            width: 200px;
+            margin-left: auto;
+                margin-right: auto;
+            }
+         }
+
 
 .btn__footer__text {
     margin-right: 10px;

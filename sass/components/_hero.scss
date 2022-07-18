@@ -6,6 +6,14 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
+   
+
+                @media screen and (max-width: 768px) {
+
+                    padding-top: 118px;
+                    padding-bottom: 118px;
+                    
+                }
 
 }
 
@@ -20,6 +28,16 @@
         url("../images/bcg.jpg");
     background-repeat: no-repeat;
     background-position: center;
+
+  
+
+    @media screen and (max-width: 768px) {
+    
+         height: 400px;
+    min-width: 480px;
+    background-size: cover;
+
+        }
 }
 
 .hyro__text {
@@ -36,7 +54,19 @@
     height: 120px;
     margin-right: auto;
     margin-left: auto;
+   
     margin-bottom: 30px;
+
+@media screen and (max-width: 768px) {
+
+        width: 360px;
+        height: 84px;
+        font-size: 26px;
+        line-height: 1.62;
+    
+        text-align: center;
+
+    }
 
 }
 
@@ -52,8 +82,11 @@
     letter-spacing: 0.06em;
     font-family: inherit;
 
-    min-width: 200px;
+    width: 200px;
     height: 50px;
     border-radius: 4px;
+
+    margin-left: auto;
+    margin-right: auto;
 
 }

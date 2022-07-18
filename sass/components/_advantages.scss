@@ -3,6 +3,13 @@
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    @media screen and (max-width: 767px) {
+
+            padding-top: 60px;
+                padding-bottom: 60px;
+
+        }
 }
 
 .visually-hidden {
@@ -22,11 +29,49 @@
 .benefits__list {
     display: flex;
 
+    @media screen and (max-width: 767px) {
+    
+         display: block;
+         width: 480px;
+    
+        }
+
+                @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-wrap: wrap;
+       
+                // flex-basis: calc((100% - кол-во маржинов в строке * значение маржина) / кол-во элементов в строке);
+        // width: calc((100% - 1 * 30px) / 2);
+                }
+
 }
 
 .benefit__item {
 
     margin-right: 30px;
+
+    @media screen and (max-width: 767px) {
+    
+           margin-right: 0;
+
+    
+           &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        }
+
+                 @media screen and (min-width: 768px) and (max-width: 1199px) {
+
+                    width: calc((100% - 2 * 30px) / 2);
+                
+                    &:nth-child(2n) {
+                    margin-right: 0;
+                }
+                    &:nth-child(-n + 2) {
+                        margin-bottom: 57px;
+                    }
+
+
+                 }
 }
 
 .benefit__item:last-child {
@@ -58,6 +103,12 @@
     text-transform: uppercase;
 
     margin-bottom: 10px;
+
+    @media screen and (max-width: 767px) {
+    
+           text-align: center;
+    
+        }
 }
 
 .benefit__text {
@@ -68,4 +119,9 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
+
+    @media screen and (max-width: 1199px) {
+    
+            display: inline;   
+        }
 }
