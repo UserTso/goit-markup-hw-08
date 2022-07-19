@@ -343,16 +343,44 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .overlay {
     height: 400px;
     min-width: 480px;
     background-size: cover;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/mobile-header.jpg");
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/mobile/mobile-header2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .overlay {
+    min-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/mobile-header.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/mobile-header2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    min-width: 1200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bcg.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/bcg2x.jpg");
   }
 }
 
 .hyro__text {
-  color: #FFFFFF;
+  color: #ffffff;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -376,7 +404,7 @@ ul {
 
 .button {
   background-color: var(--bg-hover-logo);
-  color: #FFFFFF;
+  color: #ffffff;
   border: none;
   cursor: pointer;
   font-weight: 700;
@@ -794,7 +822,7 @@ ul {
   }
 }
 .backcolor {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .team__title {
@@ -831,7 +859,7 @@ ul {
 .team__item {
   width: 277.5px;
   margin-right: 30px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
@@ -908,16 +936,16 @@ ul {
   align-items: center;
   justify-content: center;
   border-radius: 50px;
-  fill: #AFB1B8;
+  fill: #afb1b8;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social__link:hover, .social__link:focus {
   background-color: var(--bg-hover-logo);
   border-radius: 50px;
-  fill: #FFFFFF;
+  fill: #ffffff;
 }
 .social__link:hover .social__icons, .social__link:focus .social__icons {
-  fill: #FFFFFF;
+  fill: #ffffff;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
