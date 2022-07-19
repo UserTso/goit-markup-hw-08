@@ -18,7 +18,7 @@
   <body class="body">
     <!-- хедер -->
 
-    <!-- <header class="site-heder">
+    <header class="site-heder">
       <div class="container main-heder">
         <nav class="nav-title">
           <a href="./index.html" class="logo"
@@ -29,6 +29,22 @@
             <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфолио</a></li>
             <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
           </ul>
+          <button
+            type="button"
+            class="nav__button"
+            aria-controls="nav__menu"
+            aria-expanded="false"
+            data-menu-button
+          >
+            <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+              <use class="nav__button-menu" href="./images/symbol-defs.svg#icon-mobile-menu"></use>
+              <use
+                class="nav__button-cross"
+                href="./images/symbol-defs.svg#icon-mobile-cross"
+              ></use>
+            </svg>
+          </button>
+          <div class="nav__menu" id="nav__menu" data-menu></div>
         </nav>
 
         <ul class="auth">
@@ -50,7 +66,7 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
     <!-- Розділ мейн -->
     <main class="primary">
       <!-- Герой -->
@@ -523,7 +539,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
